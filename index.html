@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Paul V. Galvin Library at Illinois Tech: search, hours, services, staff, locations, and student resources." />
+  <title>Paul V. Galvin Library — Illinois Tech</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Roboto+Slab:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  
+  <header class="site-header">
+    <div class="wrap header-grid">
+      <div class="brand">
+        <span class="iit">ILLINOIS TECH</span>
+        <span class="divider" aria-hidden="true"></span>
+        <span class="lib-name">Paul V. Galvin Library</span>
+      </div>
+      <aside class="status" aria-live="polite">
+        <p class="line1">The Library is <span class="open">OPEN</span></p>
+        <p class="line2">Today Hours: <strong>9:00am – 10:00pm</strong></p>
+        <p class="small">🕘 <a href="#hours" data-route="hours">View full library schedule</a></p>
+      </aside>
+    </div>
+
+    
+    <nav class="main-nav" aria-label="Primary">
+      <div class="wrap">
+        <ul class="nav-menu">
+          <!-- ABOUT -->
+          <li class="has-dropdown">
+            <button class="nav-btn" aria-expanded="false" aria-controls="about-submenu">About</button>
+            <ul id="about-submenu" class="dropdown" aria-label="About submenu">
+              <li><a href="#mission" data-route="mission">Mission &amp; Vision</a></li>
+              <li><a href="#staff" data-route="staff">Our Staff</a></li>
+              <li><a href="#locations" data-route="locations">Locations</a></li>
+              <li><a href="#advisory" data-route="advisory">Library Student Advisory Group</a></li>
+            </ul>
+          </li>
+
+          <li><a href="#calendar" data-route="calendar">Calendar</a></li>
+
+          <!-- SERVICES -->
+          <li class="has-dropdown">
+            <button class="nav-btn" aria-expanded="false" aria-controls="services-submenu">Services</button>
+            <ul id="services-submenu" class="dropdown" aria-label="Services submenu">
+              <li><a href="#borrow" data-route="borrow">Borrow a Book</a></li>
+              <li><a href="#research" data-route="research">Research Appointment</a></li>
+              <li><a href="#reserve" data-route="reserve">Reserve a Space</a></li>
+            </ul>
+          </li>
+
+          <li><a href="#contact" data-route="contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <!-- MAIN -->
+  <main id="main" role="main">
+    
+    <section class="hero" aria-labelledby="title">
+      <div class="hero-bg" aria-hidden="true"></div>
+      <div class="wrap">
+        <h1 id="title">Illinois Tech Library Search</h1>
+
+        <div class="search-area">
+          <form id="searchForm" class="search-bar" role="search" aria-label="Library search">
+            <label class="sr-only" for="q">Search for books and more</label>
+            <input id="q" name="q" type="search" placeholder="Search for books and more" />
+            <button type="submit" class="icon-btn" aria-label="Search">
+              <svg width="22" height="22" viewBox="0 0 24 24" aria-hidden="true">
+                <path fill="currentColor" d="M15.5 14h-.8l-.3-.3a6.5 6.5 0 1 0-.9.9l.3.3v.8l5 5 1.5-1.5-5-5zm-6 0a4.5 4.5 0 1 1 0-9 4.5 4.5 0 0 1 0 9z"/>
+              </svg>
+            </button>
+          </form>
+
+          <div class="cta-row">
+            <div class="cta-left">
+              <a class="btn" href="#databases" data-route="databases">See all databases</a>
+            </div>
+            <div class="cta-right">
+              <a class="btn" href="#advanced" data-route="advanced">Advanced Search</a>
+            </div>
+          </div>
+
+          <!-- Quick Help-->
+          <ul class="quick-help">
+            <li class="help-title">Need Help?</li>
+            <li>📞 312-567-7553 · 📧 <a href="mailto:library@illinoistech.edu">library@illinoistech.edu</a></li>
+            <li>💬 <a href="#chat" data-route="chat">Chat with a Librarian</a></li>
+            <li>💡 <a href="#suggestion" data-route="suggestion">Make a Suggestion</a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- LIBRARY NEWS  -->
+    <section id="news" class="section active" data-section="news">
+      <div class="wrap">
+        <h2>Library News</h2>
+        <article>
+          <h3>Welcome Back Students!</h3>
+          <p>Explore our refreshed study spaces and updated digital resources for the semester.</p>
+        </article>
+        <article>
+          <h3>Extended Hours During Exams</h3>
+          <p>Open until midnight during finals week. Watch for coffee & snack nights!</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- MISSION & VISION -->
+    <section id="mission" class="section alt" data-section="mission">
+      <div class="wrap prose">
+        <h2>Mission &amp; Vision</h2>
+
+        <h3>Mission statement</h3>
+        <p>
+          The Illinois Institute of Technology Libraries apply our diverse resources of staff, space and technology
+          to drive innovation and effect change through knowledge and scholarship.
+        </p>
+
+        <h3>Vision statement</h3>
+        <p>
+          The Illinois Institute of Technology Libraries are an integral component of the university, buttressing all core activities…
+          (content continues as you provided)
+        </p>
+
+        <h4>Values</h4>
+        <ul>
+          <li><strong>Quality:</strong> The Libraries commit to providing excellent resources and patron-centered service.</li>
+          <li><strong>Knowledge:</strong> We promote access, availability and preservation of knowledge.</li>
+          <li><strong>Creativity:</strong> A culture of innovation, respect, curiosity, risk-taking, diversity and collaboration.</li>
+          <li><strong>Intellectual Enrichment:</strong> Encourage active listening, free flow of information, and civil discourse.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- STAFF -->
+    <section id="staff" class="section" data-section="staff">
+      <div class="wrap staff">
+        <h2>Our Staff</h2>
+
+        <div class="staff-list">
+          <div class="member">
+            <div class="info">
+              <h3>Aric Ahrens <span class="arrow">→</span></h3>
+              <p class="title"><em>Engineering & Government Information Librarian</em></p>
+              <p class="dept">Distinctive Collections and Digital Strategy</p>
+            </div>
+            <div class="contact">
+              <p>📞 312.567.3614</p>
+              <p>✉️ <a href="mailto:ahrens@illinoistech.edu">ahrens@illinoistech.edu</a></p>
+            </div>
+          </div>
+
+          <div class="member">
+            <div class="info">
+              <h3>Anri Brod <span class="arrow">→</span></h3>
+              <p class="title"><em>Online Learning and Instruction Librarian</em></p>
+              <p class="dept">Reference and Instruction</p>
+            </div>
+            <div class="contact">
+              <p>📞 312.567.3386</p>
+              <p>✉️ <a href="mailto:abrod@illinoistech.edu">abrod@illinoistech.edu</a></p>
+            </div>
+          </div>
+
+          <div class="member">
+            <div class="info">
+              <h3>Karen Cherone <span class="arrow">→</span></h3>
+              <p class="title"><em>Head of Access Services</em></p>
+              <p class="dept">Access Services</p>
+            </div>
+            <div class="contact">
+              <p>📞 312.567.7997</p>
+              <p>✉️ <a href="mailto:kcherone@illinoistech.edu">kcherone@illinoistech.edu</a></p>
+            </div>
+          </div>
+
+          <div class="member">
+            <div class="info">
+              <h3>Michael Gillespie <span class="arrow">→</span></h3>
+              <p class="title"><em>Interlibrary Loan Specialist II</em></p>
+              <p class="dept">Access Services</p>
+            </div>
+            <div class="contact">
+              <p>📞 312.567.3619</p>
+              <p>✉️ <a href="mailto:mgillesp@illinoistech.edu">mgillesp@illinoistech.edu</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- LOCATIONS -->
+    <section id="locations" class="section alt" data-section="locations">
+      <div class="wrap locations">
+        <h2>Locations</h2>
+        <hr class="section-line">
+
+        <div class="locations-list">
+          <article class="location">
+            <div class="content">
+              <h3>Paul V. Galvin Library</h3>
+              <p>Main library at Mies Campus offering research help, reservable study rooms, laptop loans, Wi-Fi hotspots, and extensive print and e-resources.</p>
+              <a class="learn" href="#" aria-label="Learn more about Paul V. Galvin Library">Learn More</a>
+            </div>
+          </article>
+
+          <article class="location reverse">
+            <div class="content">
+              <h3>Chicago-Kent College of Law Library</h3>
+              <p>Serves Chicago-Kent College of Law and graduate programs in business; includes the Library of International Relations.</p>
+              <a class="learn" href="#" aria-label="Learn more about Chicago-Kent College of Law Library">Learn More</a>
+            </div>
+          </article>
+
+          <article class="location">
+            <div class="content">
+              <h3>Center for the Study of Ethics in the Professions Library</h3>
+              <p>Collects and maintains materials on professional and practical ethics supporting IIT’s Center for the Study of Ethics in the Professions.</p>
+              <a class="learn" href="#" aria-label="Learn more about CSEP Library">Learn More</a>
+            </div>
+          </article>
+
+          <article class="location reverse">
+            <div class="content">
+              <h3>Graham Resource Center</h3>
+              <p>Located in S. R. Crown Hall; print and electronic resources for the College of Architecture.</p>
+              <a class="learn" href="#" aria-label="Learn more about Graham Resource Center">Learn More</a>
+            </div>
+          </article>
+
+          <article class="location">
+            <div class="content">
+              <h3>Institute for Food Safety and Health Library</h3>
+              <p>Supports IFSH students and faculty at the Moffett Campus and houses depository materials for the UN Food and Agriculture Organization.</p>
+              <a class="learn" href="#" aria-label="Learn more about IFSH Library">Learn More</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ADVISORY -->
+    <section id="advisory" class="section" data-section="advisory">
+      <div class="wrap prose">
+        <h2>About the Library Student Advisory Group</h2>
+        <p>
+          The Library Student Advisory Group (LSAG) is composed of a diverse group of undergraduate and graduate students…
+        </p>
+
+        <h3>Contact</h3>
+        <p>
+          Questions about services, membership, or meetings? Email
+          <a href="mailto:yhan27@illinoistech.edu">yhan27@illinoistech.edu</a>.
+        </p>
+        <p>
+          Interested in serving on the Student Advisory Group? Apply during the open call each semester.
+        </p>
+
+        <h3>Membership</h3>
+        <ul>
+          <li>Identify student needs and priorities for spaces and services</li>
+          <li>Provide feedback on events and communications</li>
+          <li>Advise on collections, technology, and study environments</li>
+          <li>Bridge the student body and the library</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- OTHER SECTIONS -->
+    <section id="calendar" class="section alt" data-section="calendar">
+      <div class="wrap"><h2>Calendar</h2><p>Events and workshops.</p></div>
+    </section>
+
+    <section id="borrow" class="section" data-section="borrow">
+      <div class="wrap"><h2>Borrow a Book</h2><p>Info about borrowing books.</p></div>
+    </section>
+
+    <section id="research" class="section alt" data-section="research">
+      <div class="wrap"><h2>Research Appointment</h2><p>How to book research help.</p></div>
+    </section>
+
+    <section id="reserve" class="section" data-section="reserve">
+      <div class="wrap"><h2>Reserve a Space</h2><p>Space reservation details.</p></div>
+    </section>
+
+    <section id="databases" class="section alt" data-section="databases">
+      <div class="wrap"><h2>Databases</h2><p>Browse all library databases. (Placeholder)</p></div>
+    </section>
+
+    <section id="advanced" class="section" data-section="advanced">
+      <div class="wrap"><h2>Advanced Search</h2><p>Advanced options placeholder.</p></div>
+    </section>
+
+    <section id="hours" class="section" data-section="hours">
+      <div class="wrap">
+        <h2>Hours</h2>
+        <table class="hours"><tbody>
+          <tr><th>Mon–Thu</th><td>8:00am – 10:00pm</td></tr>
+          <tr><th>Fri</th><td>8:00am – 6:00pm</td></tr>
+          <tr><th>Sat</th><td>10:00am – 5:00pm</td></tr>
+          <tr><th>Sun</th><td>12:00pm – 8:00pm</td></tr>
+        </tbody></table>
+      </div>
+    </section>
+
+    <section id="contact" class="section alt" data-section="contact">
+      <div class="wrap"><h2>Contact</h2><p>Email: <a href="mailto:library@illinoistech.edu">library@illinoistech.edu</a> · Phone: <a href="tel:3125677553">312-567-7553</a></p></div>
+    </section>
+  </main>
+
+  <footer><div class="wrap">© <span id="year"></span> Illinois Tech · Paul V. Galvin Library</div></footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
